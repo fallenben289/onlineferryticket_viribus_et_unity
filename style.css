@@ -69,7 +69,7 @@ footer{
     left:0;
     right:0;
     bottom:0;
-	position:fixed;
+	position:sticky;
 	padding:10%;
 	background-color:black;
 	z-index:9999;
