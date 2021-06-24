@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Online Ferry Ticket</title>
+		<!--Bootstrapt-->
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+	</head>
+	<!--External CSS-->
+	<link rel="stylesheet" type="text/css"href="style.css"/>
+	
+<body style="background-image: url('ocean.jpg');">
+
+<!--Body-->
+<!--Navbar Menu-->
+
+		<ul class="style1">
+		<li class="horizontal"><a href="index.html"><div class="navbar">Home</a></div></li>
+		<li class="horizontal"><div class="navbar"><a href="book.html">Book</a></div></li>
+		<li class="horizontal"><div class="navbar"><a href="about.html">About Us</a></div></li>
+		<li class="horizontal"><div class="navbar"><a href="contact.html">Contact Us</a></div></li>
+		<li class="horizontal"><div class="navbar"><a href="help.html">Help</a></div></li>
+		
+	</ul>
+<!--End-->	
+<div style="border-style:solid; height:149%; width:30%; float:left;position:absolute;top:39px; border-color:black;">
+<a href="#" style="color:black;"><div class="hov1" style="border-style:solid; height:7%; width:100%; float:left;position:absolute;top:-3px; border-color:black;"><h3 style="margin-left:3%;">FAQ</h3>
+</div></a>
+<a href="manual.html" style="color:black;"><div class="hov1" style="border-style:solid; height:7%; width:100%; float:left;position:absolute;top:6.5%; border-color:black;"><h3 style="margin-left:3%;">MANUAL</h3>
+</div></a>
+<a href="download.html" style="color:black;"><div class="hov1" style="border-style:solid; height:7%; width:100%; float:left;position:absolute;top:13%; border-color:black;"><h3 style="margin-left:3%;">DOWNLOAD</h3>
+</div><p style="margin-left:10%;"></a>
+<div style="margin-bottom:5%;"></div>
+</div>
+<center><h2>Frequently Ask Question(FAQ)</h2><br></center>
+<h5 style="margin-left:40%;">Question<br>Answer</h5>
+<div style="margin-top:3%;"></div>	
+<h5 style="margin-left:40%;">Question<br>Answer</h5>
+<div style="margin-top:3%;"></div>	
+<h5 style="margin-left:40%;">Question<br>Answer</h5>
+<div style="margin-top:3%;"></div>	
+<h5 style="margin-left:40%;">Question<br>Answer</h5>
+<div style="margin-top:3%;"></div>	
+<h5 style="margin-left:40%;">Question<br>Answer</h5>
+
+<div style="margin-top:10%;"></div>	
+		
+<div style="margin-left:29.6%;border-style:solid; height:149%; width:50%; float:left;position:absolute;top:39px; border-color:black;">
+</div>
+
+<!--Card-->	
+		
+
+<!--End-->
+<br>
+
+<!--Footer-->
+<Footer style="margin-top:15%">
+	<h3 style="margin-bottom:5%">Welcome!</h3>
+		
+		
+		
+		<div class="row">
+  <div class="column"><ul>
+		<a href="home.html">Social Media</a>
+		<li><a href="home.html">Facebook</a></li>
+		<li><a href="home.html">Instagram</a></li>
+		<li><a href="home.html">Youtube Channel</a></li>
+		
+		</ul></div>
+  <div class="column">
+		<ul>
+		<a href="home.html">Our Partner</a>
+		<li><a href="home.html">tootplate</a></li>
+		<li><a href="home.html">Jesselton Point</a></li>
+		</ul>
+		</div>
+  <div class="column">
+		<ul>
+		<a href="home.html">Navigation</a>
+		<li><a href="home.html">Book</a></li>
+		<li><a href="home.html">About Us</a></li>
+		<li><a href="home.html">Contact Us</a></li>
+		</ul></div>
+</div>
+</div>
+
+
+	<hr>
+	<h3>Viribus et Unity&nbsp &copy 2021</h3>
+</Footer>
+
+<!--End Body-->
+</body>
+
+
+<!--Javascript Function-->	
+<script>
+	// ->>Slider/Carousel function
+	var myIndex = 0;
+	carousel();
+
+	function carousel() {
+		var i;
+		var x = document.getElementsByClassName("mySlides");
+			for (i = 0; i < x.length; i++) {
+			x[i].style.display = "none";  
+		}
+			myIndex++;
+			if (myIndex > x.length) {myIndex = 1}    
+			x[myIndex-1].style.display = "block";  
+			setTimeout(carousel, 2000); // Change image every 2 seconds
+		}
+
+
+		//Sticky Navbar
+		window.onscroll = function() {myFunction()};
+
+		var navbar = document.getElementById("navbar");
+		var sticky = navbar.offsetTop;
+
+		function myFunction() {
+		  if (window.pageYOffset >= sticky) {
+			navbar.classList.add("sticky")
+		  } else {
+			navbar.classList.remove("sticky");
+		  }
+		}
+
+</script>
+
+</html>
